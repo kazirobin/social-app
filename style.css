@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+}
+main {
+  border: 3px solid red;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  button {
+    z-index: 2;
+  }
+}
+aside {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+aside.active{
+    display: none;
+}
+.one * {
+  display: flex;
+  flex-direction: column;
+}
+.one {
+    overflow: scroll;
+  padding: 12px;
+  background: purple;
+
+  div {
+    gap: 10px;
+  }
+  h1 {
+    writing-mode: vertical-rl;
+  }
+}
+.two{
+        background: purple;
+
+}
+.three {
+  flex: 1;
+  border: 10px solid gray;
+  z-index: -1;
+}

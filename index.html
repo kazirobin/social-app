@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Hello</h1>
+      <nav>
+        this is nav
+        <button>Side Toggle</button>
+      </nav>
+      <aside>
+        <div class="one">
+          <div>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+            <a href="#">🥱</a>
+          </div>
+          <h1>Icons</h1>
+          <div>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+            <a href="#">🤣</a>
+          </div>
+        </div>
+        <div class="two">
+          <div>
+            <select name="" id="">
+              <option value="one">One</option>
+              <option value="Two">Two</option>
+              <option value="Three">Three</option>
+              <option value="Fore">Fore</option>
+              <option value="Five">Five</option>
+            </select>
+            <div>
+              <input type="text" placeholder="Write here.." />
+            </div>
+          </div>
+          <ul>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Fore</a></li>
+            <li><a href="#">Five</a></li>
+          </ul>
+        </div>
+        <div class="three">shadow</div>
+      </aside>
+    </main>
+    <script>
+      const nav = document.querySelector("nav");
+      const aside = document.querySelector("aside");
+      nav.addEventListener("click", () => {
+        aside.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
